@@ -47,26 +47,26 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 
 ### 1. Configuración inicial
 - [X] Crear proyecto **ASP.NET Core MVC** con EF Core y SQL Server  
-- [ ] Configurar **DbContext (PosDbContext)**  
-- [ ] Crear **cadena de conexión** en `appsettings.json`  
-- [ ] Hacer la **migración inicial** (`dotnet ef migrations add InitialCreate`) y aplicar la BD (`dotnet ef database update`)  
+- [X] Configurar **DbContext (PosDbContext)**  
+- [X] Crear **cadena de conexión** en `appsettings.json`  
+- [X] Hacer la **migración inicial** (`dotnet ef migrations add InitialCreate`) y aplicar la BD (`dotnet ef database update`)  
 - [X] Configurar layout con **sidebar lateral**  
 
 ---
 
 ### 2. Módulo de Productos (Inventario)
-- [ ] Crear entidad `Producto` con propiedades básicas (Nombre, Precio, Stock, Categoría, IMEI)  
-- [ ] Generar `DbSet<Producto>` en `PosDbContext`  
+- [X] Crear entidad `Producto` con propiedades básicas (Nombre, Precio, Stock, Categoría, IMEI)  
+- [X] Generar `DbSet<Producto>` en `PosDbContext`  
 - [ ] Crear `ProductosController` con acciones CRUD (Index, Create, Edit, Delete, Details)  
-- [ ] Crear vistas con **Bootstrap** (usar scaffolding si se quiere rapidez)  
+- [ ] Crear vistas con **Bootstrap** 
 - [ ] Agregar validaciones con **Data Annotations** (`[Required]`, `[Range]`)  
 - [ ] Mostrar **stock bajo en rojo** en el listado de productos  
 
 ---
 
 ### 3. Módulo de Clientes
-- [ ] Crear entidad `Cliente` (Nombre, Teléfono, Email, Dirección)  
-- [ ] Agregar `DbSet<Cliente>` al `PosDbContext`  
+- [X] Crear entidad `Cliente` (Nombre, Teléfono, Email, Dirección)  
+- [X] Agregar `DbSet<Cliente>` al `PosDbContext`  
 - [ ] Crear `ClientesController` con CRUD y vistas  
 - [ ] Implementar **búsqueda por nombre o teléfono** en el Index  
 - [ ] Mostrar **historial de compras** en la vista de detalles del cliente  
@@ -74,8 +74,8 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 ---
 
 ### 4. Módulo de Empleados
-- [ ] Crear entidad `Empleado` (Nombre, Rol, Usuario, PasswordHash)  
-- [ ] Agregar `DbSet<Empleado>`  
+- [X] Crear entidad `Empleado` (Nombre, Rol, Usuario, PasswordHash)  
+- [X] Agregar `DbSet<Empleado>`  
 - [ ] CRUD básico de empleados  
 - [ ] Implementar **roles** (Administrador, Cajero, Vendedor)  
 - [ ] Integrar con **Identity o autenticación propia** (más adelante)  
@@ -83,8 +83,8 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 ---
 
 ### 5. Módulo de Ventas
-- [ ] Crear entidades `Venta` y `DetalleVenta`  
-- [ ] Relacionar: `Venta` → `Cliente`, `Empleado`, `DetallesVenta`  
+- [X] Crear entidades `Venta` y `DetalleVenta`  
+- [X] Relacionar: `Venta` → `Cliente`, `Empleado`, `DetallesVenta`  
 - [ ] Crear formulario de nueva venta:  
   - [ ] Seleccionar cliente  
   - [ ] Seleccionar productos (autocomplete o dropdown)  
@@ -96,8 +96,8 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 ---
 
 ### 6. Módulo de Proveedores
-- [ ] Crear entidad `Proveedor` (Nombre, Teléfono, Email)  
-- [ ] Relacionar con `Producto`  
+- [X] Crear entidad `Proveedor` (Nombre, Teléfono, Email)  
+- [X] Relacionar con `Producto`  
 - [ ] CRUD de proveedores  
 - [ ] Registrar **compras a proveedores** para aumentar stock  
 
